@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37.0dp"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="Menu"
+            android:layout_width="98.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMenu"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="180.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+        <Button
+            android:text="Play"
+            android:layout_width="98.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnPlay"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip"
+        android:background="#F4ECD6"
+        android:id="@+id/relativeLayout1">
+        <TextView
+            android:id="@+id/sqlite_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <TextView
+            android:text="Your Heading will appear here"
+            android:id="@+id/lbltitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dip"
+            android:paddingLeft="8dip"
+            android:paddingBottom="4dip"
+            android:textSize="18dip"
+            android:textColor="#ff2b53e4" />
+        <TextView
+            android:text="YourSub-Heading"
+            android:id="@+id/lbldescription"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="8dip"
+            android:paddingBottom="6dip"
+            android:textSize="15dip"
+            android:textColor="#13D2E1"
+            android:layout_below="@id/lbltitle" />
+        <ImageView
+            android:layout_width="36.5dp"
+            android:layout_height="70dp"
+            android:src="@drawable/arrowright"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2.0dp" />
+    </RelativeLayout>
+</LinearLayout>
